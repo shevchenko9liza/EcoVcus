@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на ивенты - ЭкоВкус</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="menu-container">
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="menu">
+            <!-- Скопировать содержимое меню из index.html -->
+        </nav>
+    </div>
+
+    <div class="notification-bell">
+        <!-- ... (такой же код уведомлений как в index.html) ... -->
+    </div>
+
+    <main class="events-content">
+        <div class="events-header">
+            <h1 class="section-title">АФИША</h1>
+            <button class="filter-button">
+                <i class="fas fa-filter"></i>
+                фильтр
+            </button>
+        </div>
+        
+        <div class="events-grid">
+            <div class="event-card">
+                <img src="../images/perf1.png" alt="Мероприятие 1">
+            </div>
+            <div class="event-card">
+                <img src="../images/perf2.png" alt="Мероприятие 2">
+            </div>
+            <div class="event-card">
+                <img src="../images/perf3.png" alt="Мероприятие 3">
+            </div>
+            <div class="event-card">
+                <img src="../images/perf4.png" alt="Мероприятие 4">
+            </div>
+            <div class="event-card">
+                <img src="../images/perf5.png" alt="Мероприятие 5">
+            </div>
+            <div class="event-card">
+                <img src="../images/perf6.png" alt="Мероприятие 6">
+            </div>
+        </div>
+
+        <div class="event-details">
+            <div class="details-card">
+                <h2>Название мероприятия</h2>
+                <div class="detail-item">
+                    <strong>Дата и время:</strong>
+                    <span id="event-datetime"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Адрес:</strong>
+                    <span id="event-address"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Описание:</strong>
+                    <p id="event-description"></p>
+                </div>
+                <div class="qr-code">
+                    <strong>QR-код для входа:</strong>
+                    <div id="qr-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/events.js"></script>
+</body>
+</html> 

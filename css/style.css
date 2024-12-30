@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'AA Stetica Light';
+    src: url('../fonts/AASteticaLight/AASteticaLight.woff2') format('woff2');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'AA Stetica Light', sans-serif;
+    color: white;
+    background: url('../images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.welcome-text {
+    padding: 6rem 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-links {
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 1rem 0;
+}

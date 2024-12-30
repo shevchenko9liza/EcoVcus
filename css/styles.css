@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'AA Stetica Light';
+    src: url('../fonts/AASteticaLight.woff2') format('woff2');
+}
+
+:root {
+    --menu-bg-opacity: 0.9;
+    --accent-color: #006400;
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'AA Stetica Light', sans-serif;
+    color: var(--text-color);
+    background: url('../images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Меню-бургер */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Основное меню */
+.main-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: rgba(0, 0, 0, var(--menu-bg-opacity));
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+    padding: 60px 0;
+    z-index: 999;
+}
+
+.main-menu.active {
+    left: 0;
+}
+
+.menu-item {
+    position: relative;
+    padding: 15px 25px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 35px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Уведомления */
+.notification-bell {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.bell-icon {
+    width: 24px;
+    height: 24px;
+    background: url('../images/bell.svg') no-repeat center;
+    display: block;
+}
+
+.notification-counter {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notifications-container {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    display: none;
+    z-index: 998;
+}
+
+.notifications-container.active {
+    display: block;
+}
+
+/* Основной контент */
+.main-content {
+    padding: 80px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome-text {
+    margin-bottom: 40px;
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Тарифы */
+.tariffs-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.tariff-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+.tariff-card h3 {
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+.tariff-price {
+    color: black;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Тренировки */
+.training-section {
+    padding: 40px 0;
+}
+
+.training-options {
+    margin-bottom: 30px;
+}
+
+.training-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.training-images img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* События */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.event-card {
+    position: relative;
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Прогресс и цели */
+.progress-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+}
+
+.goals-list {
+    color: var(--text-color);
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+} 

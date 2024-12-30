@@ -1,0 +1,66 @@
+.health-content {
+    padding: 80px 40px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.health-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.analysis-list {
+    flex: 1;
+    max-width: 400px;
+}
+
+.analysis-item {
+    font-family: 'AA Stetica Light', sans-serif;
+    color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.analysis-item i {
+    margin-left: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.analysis-item:hover i {
+    opacity: 1;
+}
+
+/* Стиль для многоточий между названием и иконкой */
+.analysis-item::after {
+    content: '';
+    flex: 1;
+    margin: 0 10px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.analysis-chart {
+    flex: 2;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@media (max-width: 1200px) {
+    .health-container {
+        flex-direction: column;
+    }
+
+    .analysis-list {
+        max-width: 100%;
+    }
+
+    .analysis-chart {
+        height: 400px;
+    }
+} 

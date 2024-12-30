@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогресс и цели - ЭкоВкус</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/progress.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="menu">
+            <!-- Скопировать содержимое меню из index.html -->
+        </nav>
+    </div>
+
+    <div class="notification-bell">
+        <!-- ... (такой же код уведомлений как в index.html) ... -->
+    </div>
+
+    <main class="progress-content">
+        <div class="progress-container">
+            <div class="goals-list">
+                <h2 class="goals-title">Ваши цели</h2>
+                <div class="goal-item">...</div>
+                <div class="goal-item">Время достижения</div>
+                <div class="goal-item">...</div>
+                <div class="goal-item">Ожидаемо тяжелые периоды</div>
+                <div class="goal-item">...</div>
+                <div class="goal-item">В % уже пройдено пути</div>
+                <div class="goal-item">...</div>
+                <div class="goal-item">План на неделю</div>
+                <div class="goal-item">...</div>
+            </div>
+
+            <div class="charts-container">
+                <div class="chart-row">
+                    <div id="trend-chart" class="chart-box">
+                        <!-- График тренда -->
+                    </div>
+                    <div id="body-model" class="chart-box">
+                        <!-- 3D модель тела -->
+                    </div>
+                </div>
+                <div class="chart-row">
+                    <div id="donut-chart" class="chart-box">
+                        <!-- Кольцевая диаграмма -->
+                    </div>
+                    <div id="bar-chart" class="chart-box">
+                        <!-- Барчарт -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/progress.js"></script>
+</body>
+</html> 

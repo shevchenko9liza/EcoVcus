@@ -1,0 +1,112 @@
+.events-content {
+    padding: 80px 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-family: 'AA Stetica Light', sans-serif;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.filter-button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'AA Stetica Light', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.filter-button:hover {
+    opacity: 0.8;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.event-card {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-details {
+    margin-top: 40px;
+}
+
+.details-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    color: #333;
+}
+
+.details-card h2 {
+    font-family: 'AA Stetica Light', sans-serif;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+}
+
+.detail-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.qr-code {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#qr-placeholder {
+    width: 150px;
+    height: 150px;
+    background: #f0f0f0;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+} 

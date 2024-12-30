@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои анализы - ЭкоВкус</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/health.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="../js/plotly-config.js"></script>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="menu">
+            <div class="menu-item">
+                Личный кабинет
+                <div class="submenu">
+                    <div class="menu-item"><a href="../pages/tariffs.html">Тарифы</a></div>
+                    <div class="menu-item"><a href="#">Уровни</a></div>
+                    <div class="menu-item"><a href="#">Данные</a></div>
+                    <div class="menu-item"><a href="#">Период жизни</a></div>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                Моё
+                <div class="submenu">
+                    <div class="menu-item"><a href="#">Друзья</a></div>
+                    <div class="menu-item"><a href="../pages/training.html">Тренировки</a></div>
+                    <div class="menu-item"><a href="../pages/nutrition.html">Питание</a></div>
+                    <div class="menu-item"><a href="../pages/health.html">Здоровье</a></div>
+                    <div class="menu-item"><a href="#">Прием воды</a></div>
+                    <div class="menu-item"><a href="#">Активность</a></div>
+                    <div class="menu-item"><a href="../pages/progress.html">Прогресс и цели</a></div>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <a href="../pages/videos.html">Видео материалы</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Статьи</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="../pages/events.html">Запись на ивенты</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Вопрос эксперту</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Поддержка</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Настройки</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Контакты</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="notification-bell">
+        <!-- ... (такой же код уведомлений как в index.html) ... -->
+    </div>
+
+    <main class="health-content">
+        <h1 class="section-title">Мои анализы</h1>
+        
+        <div class="health-container">
+            <div class="analysis-list">
+                <div class="analysis-item">
+                    Название анализа
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="analysis-item">
+                    Название анализа
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="analysis-item">
+                    Название анализа
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="analysis-item">
+                    Название анализа
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="analysis-item">
+                    Название анализа
+                    <i class="fas fa-folder"></i>
+                </div>
+            </div>
+            
+            <div id="analysis-chart" class="analysis-chart"></div>
+        </div>
+    </main>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/health.js"></script>
+</body>
+</html> 

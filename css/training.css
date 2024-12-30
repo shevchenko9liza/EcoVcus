@@ -1,0 +1,54 @@
+.training-content {
+    padding: 80px 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.training-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.training-info {
+    flex: 1;
+    max-width: 400px;
+}
+
+.info-item {
+    font-family: 'AA Stetica Light', sans-serif;
+    color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.training-images {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.training-images img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.training-images img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .training-container {
+        flex-direction: column;
+    }
+
+    .training-info {
+        max-width: 100%;
+    }
+
+    .training-images {
+        grid-template-columns: 1fr;
+    }
+} 

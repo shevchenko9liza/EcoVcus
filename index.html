@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭкоВкус</title>
+    <link rel="preload" href="fonts/AA-Stetica-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'AA Stetica Light';
+            src: url('fonts/AA-Stetica-Light.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="menu-container">
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="menu">
+            <div class="menu-item">
+                Личный кабинет
+                <div class="submenu">
+                    <div class="menu-item"><a href="pages/tariffs.html">Тарифы</a></div>
+                    <div class="menu-item"><a href="#">Уровни</a></div>
+                    <div class="menu-item"><a href="#">Данные</a></div>
+                    <div class="menu-item"><a href="#">Период жизни</a></div>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                Моё
+                <div class="submenu">
+                    <div class="menu-item"><a href="#">Друзья</a></div>
+                    <div class="menu-item"><a href="pages/training.html">Тренировки</a></div>
+                    <div class="menu-item"><a href="pages/nutrition.html">Питание</a></div>
+                    <div class="menu-item"><a href="pages/health.html">Здоровье</a></div>
+                    <div class="menu-item"><a href="#">Прием воды</a></div>
+                    <div class="menu-item"><a href="#">Активность</a></div>
+                    <div class="menu-item"><a href="pages/progress.html">Прогресс и цели</a></div>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <a href="pages/videos.html">Видео материалы</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Статьи</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="pages/events.html">Запись на ивенты</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Вопрос эксперту</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Поддержка</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Настройки</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Контакты</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="notification-bell">
+        <i class="fas fa-bell"></i>
+        <div class="notification-dot"></div>
+        <div class="notifications-panel">
+            <div class="notification-item">
+                <div class="notification-text">Добро пожаловать в мир ЭкоВкус!</div>
+                <div class="notification-time">Сейчас</div>
+            </div>
+            <div class="notification-empty">Уведомлений пока нет</div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="welcome-text">
+            <p>ЭкоВкус - это комплексная онлайн платформа, сопровождающая вас на всех этапах жизни.</p>
+            <p>Мы предлагаем индивидуальные программы на основе глубокого анализа вашего организма микробиомы, генетики и биохимии. С нами вы получите доступ к постоянно обновляющемуся контенту, можете начать в любое время и отслеживать свои достижения через передовые технологии, такие как AI-консультант и 3D-модель вашего тела. Наши инновационные инструменты помогут вам видеть свой прогресс и оставаться мотивированными.</p>
+            <p>Погружайтесь в мир здорового образа жизни вместе с мировыми экспертами, участвуйте в международных конференциях и живых встречах, которые наполнят вашу жизнь энергией и здоровьем. Превратите заботу о себе в увлекательное и вдохновляющее путешествие с ЭкоВкус!</p>
+        </div>
+
+        <div class="social-links">
+            <h2>Мы в социальных сетях</h2>
+            <a href="https://vk.com/ecovkus.health" target="_blank">VK</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </main>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>

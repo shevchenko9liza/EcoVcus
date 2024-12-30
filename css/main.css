@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url('../images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'AA Stetica Light', sans-serif;
+}
+
+.main-content {
+    padding: 180px 40px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.health-content,
+.training-content,
+.nutrition-content,
+.events-content,
+.videos-content,
+.tariffs-content,
+.progress-content {
+    padding: 400px 40px 40px;
+    max-width: 1000px;
+    margin: 0 auto 0 200px;
+}
+
+.welcome-text {
+    color: white;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    color: white;
+    margin-top: 40px;
+}
+
+.social-links h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Добавляем общие стили */
+.section-title {
+    font-family: 'AA Stetica Light', sans-serif;
+    color: white;
+    font-size: 42px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    transform: skew(-5deg);
+    font-weight: bold;
+}
+
+/* Общие стили для контейнеров */
+.content-container {
+    padding: 80px 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили для карточек */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        left: -100%;
+    }
+
+    .submenu {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .notifications-panel {
+        width: calc(100% - 40px);
+        right: 0;
+        margin: 0 20px;
+    }
+
+    .content-container {
+        padding: 60px 20px 20px;
+    }
+} 
+
+/* Оптимизация анимаций */
+.menu,
+.submenu,
+.notification-bell,
+.notifications-panel {
+    will-change: transform, opacity;
+}
+
+/* Используем GPU для анимаций */
+.menu-toggle span,
+.menu-item,
+.notification-dot {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+} 
+
+/* Отступ для контейнеров контента */
+.health-container,
+.training-container,
+.nutrition-container,
+.events-container,
+.videos-grid,
+.tariffs-container,
+.progress-container {
+    margin-top: 100px;
+    margin-left: 0;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .main-content,
+    .health-content,
+    .training-content,
+    .nutrition-content,
+    .events-content,
+    .videos-content,
+    .tariffs-content,
+    .progress-content {
+        padding: 300px 20px 20px;
+        margin: 0 20px;
+        max-width: 100%;
+    }
+} 
+
+/* Отступ для заголовков на внутренних страницах */
+.health-content .section-title,
+.training-content .section-title,
+.nutrition-content .section-title,
+.events-content .section-title,
+.videos-content .section-title,
+.tariffs-content .section-title,
+.progress-content .section-title {
+    margin-top: 0;
+    margin-bottom: 80px;
+} 
